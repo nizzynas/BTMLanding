@@ -19,8 +19,6 @@ const Home: NextPage = () => {
             <div className="h-[80px] md:h-[100px]" />
             <Stats />
             <div className="h-[120px] md:h-[200px]" />
-            <Investors />
-            <div className="h-[86px] md:h-[160px]" />
             <Demo />
             <div className="h-[120px] md:h-[130px]" />
             <SafetyFirst />
@@ -35,8 +33,8 @@ const Home: NextPage = () => {
             <div className={styles.leftDot}>
               <Wallets />
             </div>
-            <div className="h-[120px] md:h-[200px]" />
-            <ForDevelopers />
+      
+     
           </main>
 
           <Footer />

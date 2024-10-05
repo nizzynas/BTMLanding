@@ -1,6 +1,6 @@
 import { useMemo } from 'react'
 
-import { CURRENCY_USD, formatValue } from '@/format-crypto/format'
+//import { CURRENCY_USD, formatValue } from '@/format-crypto/format'
 
 import { useTokenPrice } from '@/hooks/queries/useTokenPrice'
 
@@ -40,12 +40,12 @@ function useRangedRoutes(routes: TRouteWithMeta[]) {
 
     const bestItem = routes[bestItemID]
     const bestWorth = getTokenWorth(bestItem.toTokenAmount, bestItem.calculatedSteps)
-    const bestUSDPrice = formatValue(CURRENCY_USD, getUsdAmount(bestWorth, toTokenPrice))
+    //const bestUSDPrice = formatValue(CURRENCY_USD, getUsdAmount(bestWorth, toTokenPrice))
 
     return formatterRouterList.map((route) => {
       const tokenWorth = getTokenWorth(route.toTokenAmount, route.calculatedSteps)
-      const priceUSD = formatValue(CURRENCY_USD, getUsdAmount(tokenWorth, toTokenPrice))
-      const loss = (Number(bestUSDPrice) - Number(priceUSD)) / (Number(bestUSDPrice) / 100)
+      //const priceUSD = formatValue(CURRENCY_USD, getUsdAmount(tokenWorth, toTokenPrice))
+      //const loss = (Number(bestUSDPrice) - Number(priceUSD)) / (Number(bestUSDPrice) / 100)
       const estimateTime = calculateRouteTime(route.calculatedSteps)
 
       return {
@@ -57,8 +57,8 @@ function useRangedRoutes(routes: TRouteWithMeta[]) {
           estimateTime,
           price: {
             tokenWorth,
-            priceUSD,
-            loss
+            //priceUSD,
+            //loss
           }
         }
       } as TRangingRoute

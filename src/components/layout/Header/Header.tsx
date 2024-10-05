@@ -52,8 +52,8 @@ function Header() {
       <div className={cx(styles.headerLogoContainer, isHeaderCompact && styles.headerLogoContainerFaded)}>
         <img src={isNewYearLogo ? '/images/logo-ny.svg' : '/images/logo.svg'} alt="Via" className={styles.headerLogoImage} />
         <div className={styles.headerLogoDescription}>
-          <strong>The most efficient</strong>
-          <div>Cross-chain router</div>
+          <strong>BTM</strong>
+         
         </div>
       </div>
 

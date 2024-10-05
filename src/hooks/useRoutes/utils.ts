@@ -4,7 +4,6 @@ import { queryClient } from '../queries/common/queryClient'
 import { createQueryParams as createGasPriceQueryParams } from '@/hooks/queries/useGasPrice/config'
 import { createQueryParams as createTokenPriceQueryParams } from '@/hooks/queries/useTokenPrice/config'
 import type { TChainInfo, TChainMap, TFormatActionOpts, TFormatRouteOpts } from './types'
-import { formatValue, CURRENCY_USD, CURRENCY_CRYPTO } from '@/format-crypto/format'
 import { fromDecimal, getNetworkByChainId } from '@/views/IndexPage/Demo/components/Routes/utils'
 
 export const EVM_BASE_TOKEN_ADDRESS = '0x0000000000000000000000000000000000000000'
@@ -20,8 +19,7 @@ const SOLANA_BASE_TOKEN_ADDRESS = 'So11111111111111111111111111111111111111111'
  */
 export const getTokenWorth = (toTokenAmount: string, steps: TRouteStep[]) => {
   const lastStep = steps[steps.length - 1]
-
-  return formatValue(CURRENCY_CRYPTO, fromDecimal(toTokenAmount, lastStep.toToken.decimals))
+  return fromDecimal(toTokenAmount, lastStep.toToken.decimals)
 }
 
 /**
@@ -52,13 +50,10 @@ const getTokenPriceInfo = ({
   const nToken = fromDecimal(nWei, network!.currencyDecimals).toFixed(FIXED_PART)
   const usd = getUsdAmount(nToken, priceUSD).toFixed(FIXED_PART)
 
-  const formattedUSD = formatValue(CURRENCY_USD, usd)
-  const formattedToken = formatValue(CURRENCY_CRYPTO, nToken)
-
   return {
     wei: nWei,
-    usd: formattedUSD,
-    token: formattedToken
+    usd: `${usd} USD`, // Simple formatting for USD
+    token: `${nToken} ${network?.currencySymbol}` // Simple formatting for Token
   }
 }
 
@@ -143,14 +138,11 @@ const formatRoute =
           ],
           [0, 0, 0, 0]
         )
-        .map(value => formatValue(CURRENCY_USD, value))
+        .map(value => `${value} USD`) // Simple USD formatting
 
       const toTokenWorth = getUsdAmount(getTokenWorth(route.toTokenAmount, calculatedSteps), toTokenPrice || 1)
 
-      const calculatedToTokenAmountUSD = formatValue(
-        CURRENCY_USD,
-        Number(formatValue(CURRENCY_USD, toTokenWorth)) - Number(totalGasUSD) - Number(providerFeeUSD)
-      )
+      const calculatedToTokenAmountUSD = `${Number(toTokenWorth) - Number(totalGasUSD) - Number(providerFeeUSD)} USD`
 
       const toolList = calculatedSteps.map(step => `${step.tool.name}${step.fromToken.symbol}`).join('')
 
@@ -172,6 +164,9 @@ const formatRoute =
         calculatedSteps
       }
     }
+
+// The rest of the code remains unchanged
+
 
 /**
  * It takes an array of routes and returns an object with the gas price and token price for each chain

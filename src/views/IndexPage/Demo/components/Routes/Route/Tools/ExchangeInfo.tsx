@@ -5,7 +5,7 @@ import dynamic from 'next/dynamic'
 import { getTokenDescription } from '../../helpers'
 import type { TExchangeInfoProps, TExchangeInfoStandProps, TToken } from '../../types'
 import { getNotAvailablePriceText } from '../helpers'
-import { CURRENCY_CRYPTO, formatValue } from '@/format-crypto/format'
+//import { CURRENCY_CRYPTO, formatValue } from '@/format-crypto/format'
 
 import type { TTooltipProps } from '@/components/kit'
 import { Icon, Logo, NetworkLogo } from '@/components/kit'
@@ -46,7 +46,7 @@ const ExchangeInfoStand: FC<PropsWithChildren<TExchangeInfoStandProps>> = memo(
             </Tooltip>
               )
             : (
-                formatValue(CURRENCY_CRYPTO, fromDecimal(tokenAmount, token.decimals))
+                ""
               )}
         </div>
       </div>

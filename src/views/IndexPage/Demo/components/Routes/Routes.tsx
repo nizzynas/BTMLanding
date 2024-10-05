@@ -9,7 +9,6 @@ import EthLogo from 'public/images/tokens/eth.svg'
 import { Icon } from '@/components/kit'
 import { useRoutes } from '@/hooks/useRoutes/useRoutes'
 import styles from '../../Demo.module.scss'
-import { CURRENCY_CRYPTO, formatValue } from '@/format-crypto/format'
 import { fromDecimal } from './utils'
 
 const ROUTES_ACTIVE_BY_DEFAULT = 3
@@ -22,11 +21,13 @@ const Routes: FC<PropsWithChildren<TRoutesProps>> = memo(({ className }) => {
   const countOfSkeletons = Math.max(11 - routes.length, 1)
   const skeletonArray = useMemo(() => new Array(countOfSkeletons).fill(null), [countOfSkeletons])
 
+  // Instead of using formatValue, just format the number using native JavaScript methods
   const toAmount = routes.length
-    ? formatValue(CURRENCY_CRYPTO, fromDecimal(
+    ? fromDecimal(
       routes[0].toTokenAmount,
       routes[0].calculatedSteps[routes[0].calculatedSteps.length - 1].toToken.decimals
-    )) : 1
+    ).toLocaleString(undefined, { minimumFractionDigits: 2, maximumFractionDigits: 2 })
+    : '1'
 
   return (
     <section className={className}>
