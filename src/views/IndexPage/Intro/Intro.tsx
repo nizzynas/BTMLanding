@@ -11,8 +11,8 @@ function Intro() {
         </a>
       </div>
       <h1>
-        Safe and efficient<br />
-        cross-chain router
+      Decentralized Liquidity<br />
+      for Global ATMs
       </h1>
       <a data-button="large" href="https://router.via.exchange/" target="_blank" rel="noreferrer">Launch dApp</a>
     </Section>

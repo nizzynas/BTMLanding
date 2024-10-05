@@ -4,12 +4,12 @@ import { Section } from '@/components/layout'
 function Stats() {
   const items = [
     {
-      title: <>$1,4b</>,
-      text: <>Trading<br className="md:hidden" /> volume</>
+      title: <>$2.8m</>,
+      text: <>Liquidity<br className="md:hidden" /></>
     },
     {
       title: <>399k</>,
-      text: <>All&nbsp;time<br className="md:hidden" /> trades</>
+      text: <>All&nbsp;time<br className="md:hidden" /> transactions</>
     },
     {
       title: <>74,7k</>,

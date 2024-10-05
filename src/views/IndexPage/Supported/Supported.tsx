@@ -18,11 +18,7 @@ function Supported() {
       </div>
       <div className={styles.demo}>
         <Tab.Group defaultIndex={2}>
-          <Tab.List className={styles.header}>
-            {tabLabels.map(label => (
-              <Tab key={label} className={({ selected }) => cx(styles.button, selected && styles.activeButton)}>{label}</Tab>
-            ))}
-          </Tab.List>
+          
           <Tab.Panels className={styles.content}>
             {(Object.values(filteredTools) as TTool[][]).map((tools, index) => (
               <Tab.Panel key={tabLabels[index]} className="flex flex-wrap gap-4">
@@ -31,10 +27,7 @@ function Supported() {
             ))}
           </Tab.Panels>
         </Tab.Group>
-        <div className={styles.description}>
-          <h3 className={styles.lot}>A lot</h3>
-          <p>We support most of them</p>
-        </div>
+        
       </div>
     </Section>
   )

@@ -37,8 +37,8 @@ function Ecosystem() {
     <div className={styles.bg}>
         <div className={styles.wrapper}>
           <div className={styles.text}>
-            <h2 className={styles.title}>Advanced routes <br /> for all ecosystems</h2>
-            <p className={styles.subtitle}>Seamlessly move tokens between ecosystems, even if there is no direct bridge</p>
+            <h2 className={styles.title}>Universal Cash Flow Channels <br /> Connect BTMs Across Blockchains</h2>
+            <p className={styles.subtitle}>Easily transfer assets between different blockchain ecosystems to ensure seamless transactions across all ATMs.</p>
           </div>
           {blocks.map((network, index) => (
             <EcoBlock key={index} network={network} />

@@ -20,45 +20,47 @@ function Features() {
         <Tile.Group>
           <Tile
             icon={<SmartSortingIcon/>}
-            title="Smart sorts"
-            description="Choose the best route considering all possible attributes"
+            title="Optimized Transaction Routing"
+            description="Automatically select the most efficient path for crypto transactions based on fees and speed, ensuring optimal performance across BTMs."
           />
           <Tile
             icon={<MultiAccountingIcon/>}
-            title="Multi-accounting"
-            description="Continue a transaction in another ecosystem wallet, see balances and history for all your wallets at one time"
+            title="Unified Wallet Management"
+            description="Seamlessly manage multiple wallets across different blockchain networks for easier access to funds through BTMs."
           />
           <Tile
-            icon={<FilterToolsIcon/>}
-            title="Filter for bridges & DEXs"
-            description="Search for routes through selected bridges or DEX without trade offs in decentralization"
+            icon={<MultilingualIcon/>}
+            title="Multilingual translation"
+            description="Provide a seamless experience by offering multi-language support for your BTM users worldwide."
           />
           <Tile
             slots={2}
             icon={<SlippageIcon/>}
-            title="Slippage"
-            description="Flexibly adjust the slippage without fear of an unexpected loss of a significant percentage"
+            title="Slippage Protection"
+            description="Control slippage levels during crypto transactions to prevent unexpected losses, ensuring reliable performance for BTM users."
           />
           <Tile
             icon={<DurationIcon/>}
-            title="Current duration"
-            description="Be sure of the duration of the transaction due to the dynamic calculation on historical data"
+            title="Transaction Time Estimate"
+            description="Get accurate estimates of transaction times, allowing users to plan their BTM interactions with confidence."
           />
           <Tile
             icon={<GasEstimationIcon/>}
-            title="Gas usage estimation"
-            description="We estimate gas on historical data for fair competition among bridges and aggregators"
+            title="Transaction Fee Estimator"
+            description="Estimate transaction fees based on current blockchain conditions, ensuring cost-effective crypto transactions through BTMs."
           />
           <Tile
             icon={<RecipientAddressIcon/>}
-            title="Recipient address"
-            description="Send tokens to a friend or protocol to an address on another network"
+            title="Recipient Address Management"
+            description="Send and receive crypto funds through your BTM by quickly entering or selecting a recipient address."
           />
           <Tile
             icon={<RouteRescuerIcon/>}
-            title="Route Rescuer"
-            description="We disable a route if you don't have enough gas for the second transaction"
+            title="Route Failure Protection"
+            description="Automatically adjust transaction routes if insufficient gas is detected, ensuring smooth operation across BTM transactions."
           />
+
+{/* 
           <Tile
             icon={<MultilingualIcon/>}
             title="Multilingual translation"
@@ -70,6 +72,8 @@ function Features() {
             title="Route's preview"
             description="Quickly preview the best route with all its attributes"
           />
+
+*/}
         </Tile.Group>
       </>
     </Section>

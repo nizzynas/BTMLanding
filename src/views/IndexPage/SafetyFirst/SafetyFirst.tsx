@@ -12,9 +12,9 @@ function SafetyFirst() {
   return (
     <Section>
       <>
-        <h2 className="mb-6 ml-2 text-[36px] font-semibold leading-[44px] lg:hidden">Safety first</h2>
+        <h2 className="mb-6 ml-2 text-[36px] font-semibold leading-[44px] lg:hidden">Secure Crypto Transactions</h2>
         <Tile.Group>
-          <Tile title="Safety first" className="hidden lg:flex" />
+          <Tile title="Secure Crypto Transactions" className="hidden lg:flex" />
           <Tile
             icon={<WatchdogIcon/>}
             title="Bridges' watchdog"
@@ -35,7 +35,7 @@ function SafetyFirst() {
           <Tile
             icon={<AuditIcon/>}
             title="Passed audit"
-            description="Audit by Pessimistic successfully passed in Q4 2022. Next one is scheduled for Q2 2023"
+            description="Audit successfully passed in Q3 2024. Next one is scheduled for Q4 2024"
             isMobileColumned
           />
           <Tile

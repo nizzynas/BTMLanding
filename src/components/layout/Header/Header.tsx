@@ -50,9 +50,9 @@ function Header() {
   return (
     <header className={cx(styles.header, isHeaderCompact && styles.headerCompact)}>
       <div className={cx(styles.headerLogoContainer, isHeaderCompact && styles.headerLogoContainerFaded)}>
-        <img src={isNewYearLogo ? '/images/logo-ny.svg' : '/images/logo.svg'} alt="Via" className={styles.headerLogoImage} />
+        {/*<img src={isNewYearLogo ? '/images/logo-ny.svg' : '/images/logo.svg'} alt="Via" className={styles.headerLogoImage} />*/}
         <div className={styles.headerLogoDescription}>
-          <strong>BTM</strong>
+          <strong>BTM Tech</strong>
          
         </div>
       </div>
@@ -61,7 +61,7 @@ function Header() {
         <div className={styles.headerSocialsWrapper}>
           <ul className={cx(styles.headerSocials, styles.headerSocialsPreview, isSocialsExpanded && styles.headerSocialsHidden)}>
             {socials.slice(0, 3).map(socialItem)}
-            <button className={styles.headerSocialToggler} onClick={toggleSocials}><MoreIcon /></button>
+            
           </ul>
 
           <ul className={cx(styles.headerSocials, !isSocialsExpanded && styles.headerSocialsHidden)}>
@@ -71,12 +71,6 @@ function Header() {
         </div>
 
         <nav className={styles.headerButtons}>
-          <a href="https://docs.via.exchange/product-docs" className={styles.headerButton} target="_blank" rel="noreferrer">
-            Docs
-          </a>
-          <a href="https://github.com/viaprotocol/via-sdk-js" className={styles.headerButton} target="_blank" rel="noreferrer">
-            SDK
-          </a>
           <a href="https://router.via.exchange" className={cx(styles.headerButton, styles.headerLaunchButton, isHeaderCompact && styles.headerLaunchButtonCompact)} target="_blank" rel="noreferrer">
             Launch
           </a>

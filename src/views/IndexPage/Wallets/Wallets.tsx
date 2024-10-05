@@ -16,15 +16,21 @@ function Wallets() {
   const secondHalfWallets = useMemo(() => [...wallets.items].splice(-middleIndex), [])
 
   return (
-      <Section>
-        <h2 className={styles.title}>Your favorite wallets</h2>
-        <p className={styles.description}>All major wallets with the ability to keep connected all at the same time</p>
+    <Section>
+      <h2 className={styles.title}>Works with Your Favorite Wallets</h2>
+      <p className={styles.description}>
+        Seamlessly integrate with any wallet of your choice, providing full
+        flexibility and control.
+      </p>
 
-        <WalletList items={firstHalfWallets}></WalletList>
-        <WalletList items={secondHalfWallets} speed={15} direction="left"></WalletList>
-
-      </Section>
-  )
+      <WalletList items={firstHalfWallets}></WalletList>
+      <WalletList
+        items={secondHalfWallets}
+        speed={15}
+        direction="left"
+      ></WalletList>
+    </Section>
+  );
 }
 
 export { Wallets }

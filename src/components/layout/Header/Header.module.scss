@@ -224,17 +224,17 @@
 
 .headerLaunchButton {
   min-width: 105px;
-  background-color: #00FF60;
+  background-color: #305531;
   color: #090A0C;
 
   &:hover {
     background-color: #FF2E2E;
     color: #FFFFFF;
-    box-shadow: 0px 0px 40px #ff002e;
+    box-shadow: 0px 0px 40px #d3dbcd;
   }
 
   &:active {
-    background-color: #b90d2c;
+    background-color: #d3dbcd;
     color: #f1cfd5;
   }
 }

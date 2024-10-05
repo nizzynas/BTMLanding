@@ -3,8 +3,8 @@
 <rect width="275" height="110" fill="url(#paint0_linear_2702_20811)"/>
 </mask>
 <g mask="url(#mask0_2702_20811)">
-<circle cx="27.5" cy="55" r="27.5" fill="#00FF60" fill-opacity="0.04"/>
-<circle cx="27.5" cy="55" r="27" stroke="#00FF60" stroke-opacity="0.48"/>
+<circle cx="27.5" cy="55" r="27.5" fill="#305531" fill-opacity="0.04"/>
+<circle cx="27.5" cy="55" r="27" stroke="#305531" stroke-opacity="0.48"/>
 <circle cx="151.25" cy="55" r="27.5" fill="white" fill-opacity="0.02"/>
 <circle cx="151.25" cy="55" r="27" stroke="white" stroke-opacity="0.08"/>
 <circle cx="275" cy="55" r="27.5" fill="white" fill-opacity="0.02"/>
@@ -21,13 +21,13 @@
 <rect x="61" y="51.8333" width="56.75" height="6.33333" rx="3.16667" stroke="white" stroke-opacity="0.08"/>
 <rect x="184.25" y="51.3333" width="57.75" height="7.33333" rx="3.66667" fill="white" fill-opacity="0.02"/>
 <rect x="184.75" y="51.8333" width="56.75" height="6.33333" rx="3.16667" stroke="white" stroke-opacity="0.08"/>
-<path d="M27.4278 39.0493L27.2163 39.7676V60.6097L27.4278 60.8207L37.1023 55.102L27.4278 39.0493Z" stroke="#00FF60" stroke-linejoin="round"/>
-<path d="M27.4276 39.0493L17.7529 55.102L27.4276 60.8207V50.7045V39.0493Z" stroke="#00FF60" stroke-linejoin="round"/>
-<path d="M27.4253 62.653L27.3062 62.7983V70.2226L27.4253 70.5705L37.1057 56.9373L27.4253 62.653Z" stroke="#00FF60" stroke-linejoin="round"/>
-<path d="M27.4276 70.5705V62.653L17.7529 56.9373L27.4276 70.5705Z" stroke="#00FF60" stroke-linejoin="round"/>
-<path d="M27.4263 60.8208L37.1007 55.1021L27.4263 50.7046V60.8208Z" stroke="#00FF60" stroke-linejoin="round"/>
-<path d="M17.7529 55.1021L27.4276 60.8208V50.7046L17.7529 55.1021Z" stroke="#00FF60" stroke-linejoin="round"/>
-<rect x="60.5" y="51.3333" width="27.5" height="7.33333" rx="3.66667" fill="#00FF60"/>
+<path d="M27.4278 39.0493L27.2163 39.7676V60.6097L27.4278 60.8207L37.1023 55.102L27.4278 39.0493Z" stroke="#305531" stroke-linejoin="round"/>
+<path d="M27.4276 39.0493L17.7529 55.102L27.4276 60.8207V50.7045V39.0493Z" stroke="#305531" stroke-linejoin="round"/>
+<path d="M27.4253 62.653L27.3062 62.7983V70.2226L27.4253 70.5705L37.1057 56.9373L27.4253 62.653Z" stroke="#305531" stroke-linejoin="round"/>
+<path d="M27.4276 70.5705V62.653L17.7529 56.9373L27.4276 70.5705Z" stroke="#305531" stroke-linejoin="round"/>
+<path d="M27.4263 60.8208L37.1007 55.1021L27.4263 50.7046V60.8208Z" stroke="#305531" stroke-linejoin="round"/>
+<path d="M17.7529 55.1021L27.4276 60.8208V50.7046L17.7529 55.1021Z" stroke="#305531" stroke-linejoin="round"/>
+<rect x="60.5" y="51.3333" width="27.5" height="7.33333" rx="3.66667" fill="#305531"/>
 <rect x="61" y="51.8333" width="26.5" height="6.33333" rx="3.16667" stroke="white" stroke-opacity="0.08"/>
 </g>
 <defs>

@@ -5,6 +5,8 @@ enum ToolTypeEnum {
 }
 
 type TTool = {
+  id: Key | null | undefined
+  description: ReactNode
   name: string
   type: ToolTypeEnum
   logoURI: string

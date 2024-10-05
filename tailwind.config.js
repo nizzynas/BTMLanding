@@ -35,7 +35,7 @@ module.exports = {
       colors: {
         current: 'currentColor',
         acid: {
-          DEFAULT: '#00FF60'
+          DEFAULT: '#305531'
         },
         green: {
           // todo: remove various green
