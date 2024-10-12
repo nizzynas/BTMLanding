@@ -9,33 +9,33 @@ class MyDocument extends Document {
           <meta charSet="utf-8" />
           <link rel="icon" href="/favicon.ico" />
           <meta name="theme-color" content="#000000" />
-          <link rel="apple-touch-icon" href="https://via.exchange/images/meta/meta-logo-192.png" />
+          <link rel="apple-touch-icon" href="/images/meta/meta-logo-192.png" />
           <link rel="manifest" href="/manifest.json" />
 
           <meta
             name="description"
-            content="Via Protocol unites cross-chain protocols and finds the cheapest 1-transaction any-to-any swaps."
+            content="Revolutionizing crypto transactions with BTMs, providing seamless liquidity management for all your blockchain needs."
           />
-          <meta name="thumbnail" content="https://via.exchange/images/meta/meta-logo-192.png" />
+          <meta name="thumbnail" content="/images/meta/meta-logo-192.png" />
 
-          <meta property="og:url" content="https://via.exchange/" />
+          <meta property="og:url" content="https://yourwebsite.com/" />
           <meta property="og:type" content="website" />
-          <meta property="og:title" content="Via Protocol | The most efficient cross-chain router" />
+          <meta property="og:title" content="BTM Solutions | Transforming Crypto with Seamless Liquidity" />
           <meta
             property="og:description"
-            content="Via Protocol unites cross-chain protocols and finds the cheapest 1-transaction any-to-any swaps."
+            content="Experience the next generation of Blockchain Teller Machines with cutting-edge liquidity solutions and real-time transaction capabilities."
           />
-          <meta property="og:image" content="https://via.exchange/images/meta/meta-preview-fb.jpg" />
+          <meta property="og:image" content="/images/meta/meta-preview-fb.jpg" />
 
           <meta name="twitter:card" content="summary_large_image" />
-          <meta property="twitter:domain" content="via.exchange" />
-          <meta property="twitter:url" content="https://via.exchange/" />
-          <meta name="twitter:title" content="Via Protocol | The most efficient cross-chain router" />
+          <meta property="twitter:domain" content="yourwebsite.com" />
+          <meta property="twitter:url" content="https://yourwebsite.com/" />
+          <meta name="twitter:title" content="BTM Solutions | Transforming Crypto with Seamless Liquidity" />
           <meta
             name="twitter:description"
-            content="Via Protocol unites cross-chain protocols and finds the cheapest 1-transaction any-to-any swaps."
+            content="Upgrade your crypto experience with BTMs that offer instant liquidity and secure transaction management."
           />
-          <meta name="twitter:image" content="https://via.exchange/images/meta/meta-preview.jpg" />
+          <meta name="twitter:image" content="/images/meta/meta-preview.jpg" />
 
           <link rel="preconnect" href="https://fonts.googleapis.com" />
           <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="true" />

@@ -26,11 +26,11 @@
 }
 
 .button {
-  @apply mr-1 mb-6 rounded-lg px-2 py-1.5 text-white/80 outline-none transition-colors hover:bg-white/5 hover:text-[#305531] font-semibold;
+  @apply mr-1 mb-6 rounded-lg px-2 py-1.5 text-white/80 outline-none transition-colors hover:bg-white/5 hover:text-[#325233] font-semibold;
 }
 
 .activeButton {
-  @apply bg-[#305531]/5 text-[#305531] hover:bg-[#305531]/10 ;
+  @apply bg-[#325233]/5 text-[#325233] hover:bg-[#325233]/10 ;
 }
 
 .content {
@@ -46,4 +46,14 @@
 
 .lot {
   @apply mb-2 text-[32px] font-semibold leading-[44px] text-white;
+}
+
+
+.phaseTitle {
+  @apply text-2xl font-semibold mb-4 text-[#305531];
+}
+
+.phaseDetails {
+  @apply text-lg leading-7 text-[#333];
+  white-space: pre-line; /* Ensures line breaks are respected */
 }

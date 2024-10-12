@@ -9,17 +9,19 @@ import 'tailwindcss/tailwind.css'
 import '../styles/globals.scss'
 
 function App({ Component, pageProps }: AppProps) {
-  return <>
-    <QueryClientProvider client={queryClient}>
-      <StateContextProvider>
-        <Head>
-          <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-          <title>Via Protocol | The most efficient cross-chain router</title>
-        </Head>
-        <Component {...pageProps} />
-      </StateContextProvider>
-    </QueryClientProvider>
-  </>
+  return (
+    <>
+      <QueryClientProvider client={queryClient}>
+        <StateContextProvider>
+          <Head>
+            <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+            <title>BTM Solutions | Revolutionizing Crypto with Seamless Liquidity</title>
+          </Head>
+          <Component {...pageProps} />
+        </StateContextProvider>
+      </QueryClientProvider>
+    </>
+  )
 }
 
 export default App

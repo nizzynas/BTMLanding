@@ -6,7 +6,7 @@ import { Wallets } from '@/views/IndexPage/Wallets'
 import { Supported } from '@/views/IndexPage/Supported'
 import { Ecosystem } from '@/views/IndexPage/Ecosystem'
 import styles from '@/styles/Common.module.scss'
-import SnapScrollSections from '@/views/IndexPage/Roadmap/Roadmap'
+//import SnapScrollSections from '@/views/IndexPage/Roadmap/Roadmap'
 
 const Home: NextPage = () => {
   return (
@@ -25,8 +25,9 @@ const Home: NextPage = () => {
            
             <SafetyFirst />
             <div className="h-[120px] md:h-[200px]" />
-            <SnapScrollSections />
+           
 <br></br>
+<Supported />
             <Features />
             <div className="h-[80px] md:h-[100px]" />
             <Ecosystem />

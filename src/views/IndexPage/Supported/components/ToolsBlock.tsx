@@ -24,8 +24,10 @@ const getSplitSize = (count: number) => {
 const ToolsBlock = ({ tools }: { tools: TTool[] }) => {
   const { isLarge } = useMedia()
 
-  const splitSize = useMemo(() => getSplitSize(tools.length), [tools])
+  const splitSize = useMemo(() => (tools?.length ? getSplitSize(tools.length) : 0), [tools])
   const splittedTools = useMemo(() => {
+    if (!tools || tools.length === 0) return [[]] // Safeguard for empty or undefined tools
+
     const res = tools.sort(() => Math.random() - 0.5).reduce((acc, el) => {
       const arrLength = parseInt((tools.length / splitSize).toString())
       if (acc[acc.length - 1].length === arrLength && acc.length < splitSize) {
@@ -37,32 +39,50 @@ const ToolsBlock = ({ tools }: { tools: TTool[] }) => {
     }, [[]] as TTool[][])
 
     return res
-  }, [tools])
+  }, [tools, splitSize])
 
-  return <div className={cx('origin-left lg:-ml-36 lg:-mb-64 lg:-rotate-45')} style={isLarge ? {
-    paddingTop: `${80 * 1 / Math.max(splitSize, 3)}rem`
-  } : undefined}>
-    {splittedTools.map((tools, index) => (
-      <Marquee key={index} gradient={false} speed={10 + index * 2} direction={index % 2 ? 'left' : 'right'} style={{ paddingInlineStart: `${index * 4}px` }}>
-      <div className="mb-5 flex items-center">
-        {tools.map((tool) => {
-          return (
-            <div className="mx-2.5" key={tool.name}>
-              <Image src={tool.logoURI} alt={tool.name} title={tool.name} width={48} height={48} className="rounded-full md:h-20 md:w-20" />
-            </div>
-          )
-        })}
-        {tools.map((tool) => {
-          return (
-            <div className="mx-3.5 md:mx-5" key={tool.name}>
-              <Image src={tool.logoURI} alt={tool.name} title={tool.name} width={48} height={48} className="rounded-full md:h-20 md:w-20" />
-            </div>
-          )
-        })}
-      </div>
-    </Marquee>
-    ))}
-  </div>
+  return (
+    <div className={cx('origin-left lg:-ml-36 lg:-mb-64 lg:-rotate-45')} style={isLarge ? {
+      paddingTop: `${80 * 1 / Math.max(splitSize, 3)}rem`
+    } : undefined}>
+      {splittedTools.map((tools, index) => (
+        <Marquee
+          key={index}
+          gradient={false}
+          speed={10 + index * 2}
+          direction={index % 2 ? 'left' : 'right'}
+          style={{ paddingInlineStart: `${index * 4}px` }}
+        >
+          <div className="mb-5 flex items-center">
+            {tools.map((tool) => (
+              <div className="mx-2.5" key={tool.name}>
+                <Image
+                  src={tool.logoURI}
+                  alt={tool.name}
+                  title={tool.name}
+                  width={48}
+                  height={48}
+                  className="rounded-full md:h-20 md:w-20"
+                />
+              </div>
+            ))}
+            {tools.map((tool) => (
+              <div className="mx-3.5 md:mx-5" key={tool.name}>
+                <Image
+                  src={tool.logoURI}
+                  alt={tool.name}
+                  title={tool.name}
+                  width={48}
+                  height={48}
+                  className="rounded-full md:h-20 md:w-20"
+                />
+              </div>
+            ))}
+          </div>
+        </Marquee>
+      ))}
+    </div>
+  )
 }
 
 export { ToolsBlock }

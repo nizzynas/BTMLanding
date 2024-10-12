@@ -1,3 +1,5 @@
+import { Key, ReactNode } from 'react';
+
 enum ToolTypeEnum {
   Swap = 'swap',
   Cross = 'cross',
@@ -15,5 +17,6 @@ type TTool = {
 type TToolResponse = {
   tools: TTool[]
 }
+
 export type { TTool, TToolResponse }
 export { ToolTypeEnum }
