@@ -1,5 +1,5 @@
 import React from 'react'
-
+import Image from 'next/image'
 import { Section } from '@/components/layout'
 
 function Intro() {
@@ -7,7 +7,7 @@ function Intro() {
     <Section className="intro">
       <div className="form-wrapper">
         <a className="form-link" href="https://router.via.exchange" target="_blank" rel="noreferrer">
-          <img src="/images/backgrounds/bg-form.svg" />
+          <Image src="/images/backgrounds/bg-form.svg" />
         </a>
       </div>
       <h1>

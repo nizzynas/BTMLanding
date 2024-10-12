@@ -1,6 +1,6 @@
 import cx from 'classnames'
 import { useContext } from 'react'
-
+import Image from 'next/image'
 import { StateContext } from '@/state'
 import { Icon } from '@/components/kit'
 
@@ -20,7 +20,7 @@ function MobileMenu() {
 
           <a href="https://docs.via.exchange/product-docs/" className="mobile-menu__docs" target="_blank" rel="noopener noreferrer">
             <span>Docs</span>
-            <img src="/images/icons/external.svg" alt="External link" width="16" height="16" />
+            <Image src="/images/icons/external.svg" alt="External link" width="16" height="16" />
           </a>
         </header>
 
@@ -33,7 +33,7 @@ function MobileMenu() {
                 <h4 className="menu-product__title">BTM protocol</h4>
                 <p className="menu-product__description">The best router for any-to-any cross-chain swaps</p>
               </div>
-              <img src="/images/icons/external.svg" alt="External link" width="16" height="16" />
+              <Image src="/images/icons/external.svg" alt="External link" width="16" height="16" />
             </a>
           </li>
           <li className="mobile-menu__product menu-product">
@@ -42,7 +42,7 @@ function MobileMenu() {
                 <h4 className="menu-product__title">SDK</h4>
                 <p className="menu-product__description">Access to multi-chain for wallets, games and marketplaces</p>
               </div>
-              <img src="/images/icons/external.svg" alt="External link" width="16" height="16" />
+              <Image src="/images/icons/external.svg" alt="External link" width="16" height="16" />
             </a>
           </li>
         </ul>

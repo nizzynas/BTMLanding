@@ -1,4 +1,4 @@
-import { Key, ReactNode } from 'react';
+import { Key, ReactNode } from 'react'
 
 enum ToolTypeEnum {
   Swap = 'swap',

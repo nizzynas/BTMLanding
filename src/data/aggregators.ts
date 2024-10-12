@@ -1,5 +1,5 @@
-import type { TTool } from '@/api/routerApi.types';
-import { ToolTypeEnum } from '@/api/routerApi.types';
+import type { TTool } from '@/api/routerApi.types'
+import { ToolTypeEnum } from '@/api/routerApi.types'
 
 const aggregators: TTool[] = [
   {
@@ -72,6 +72,6 @@ const aggregators: TTool[] = [
     type: ToolTypeEnum.Aggregator,
     logoURI: '/images/aggregators/socket.svg'
   }
-];
+]
 
-export { aggregators };
+export { aggregators }
