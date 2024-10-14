@@ -10,13 +10,13 @@ import type { TSecurityCentralizationType, TSecurityScoreType } from '../../type
 const titles: { [key in TSecurityScoreType]: string } = {
   SAFE_ROUTE: 'Safe route',
   HIGH_RISK: 'High risk',
-  POTENTIAL_RISK: 'Potential risk'
+  POTENTIAL_RISK: 'Potential risk',
 }
 
 const centralization: { [key in TSecurityCentralizationType]: string } = {
   centralized: 'centralized',
   semicentralized: 'semi-centralized',
-  decentralized: 'decentralized'
+  decentralized: 'decentralized',
 }
 
 const RiskInfo = memo((props: TRiskInfoProps) => {

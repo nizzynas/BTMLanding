@@ -10,7 +10,7 @@ const Label = function Label({
   type = 'regular',
   isActive = false,
   testId,
-  alt
+  alt,
 }: PropsWithChildren<TLabelProps>) {
   const labelActiveStyles = COLORS[activeColor]
   const isBold = type === 'bold'
@@ -23,7 +23,7 @@ const Label = function Label({
         isActive && labelActiveStyles,
         isActive
           ? 'text-white dark:text-coal'
-          : 'text-gray bg-white border border-[#11121529] dark:border-[#ffffff14] dark:text-[#ffffff66] dark:bg-[#111215]'
+          : 'text-gray bg-white border border-[#11121529] dark:border-[#ffffff14] dark:text-[#ffffff66] dark:bg-[#111215]',
       )}
       title={alt}
       {...(testId && { 'data-testid': testId })}

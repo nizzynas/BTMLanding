@@ -25,7 +25,7 @@ const Routes: FC<PropsWithChildren<TRoutesProps>> = memo(({ className }) => {
   const toAmount = routes.length
     ? fromDecimal(
       routes[0].toTokenAmount,
-      routes[0].calculatedSteps[routes[0].calculatedSteps.length - 1].toToken.decimals
+      routes[0].calculatedSteps[routes[0].calculatedSteps.length - 1].toToken.decimals,
     ).toLocaleString(undefined, { minimumFractionDigits: 2, maximumFractionDigits: 2 })
     : '1'
 
@@ -35,7 +35,7 @@ const Routes: FC<PropsWithChildren<TRoutesProps>> = memo(({ className }) => {
         <div className="flex">
           <EthLogo className="mr-[10px] h-10 w-10" />
           <div className="flex flex-col">
-            <p className="font-semibold text-[18px] tracking-tight">1</p>
+            <p className="text-[18px] font-semibold tracking-tight">1</p>
             <span className="text-xs text-white/40">on Ethereum</span>
           </div>
         </div>
@@ -43,7 +43,7 @@ const Routes: FC<PropsWithChildren<TRoutesProps>> = memo(({ className }) => {
         <div className="flex">
           <EthLogo className="mr-[10px] h-10 w-10" />
           <div className="flex flex-col">
-            <p className="font-semibold text-[18px] tracking-tight">{toAmount}</p>
+            <p className="text-[18px] font-semibold tracking-tight">{toAmount}</p>
             <span className="text-xs text-white/40">on Arbitrum</span>
           </div>
         </div>

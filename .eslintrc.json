@@ -31,10 +31,6 @@
       "error",
       "type"
     ],
-    "@typescript-eslint/comma-dangle": [
-      "error",
-      "never"
-    ],
     "tailwindcss/no-custom-classname": "off",
     // Disable rules, which conflicts with prettier
     "sort-imports": "off",

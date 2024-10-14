@@ -5,14 +5,14 @@ import type { TTooltipProps } from '@/components/kit'
 import type { PropsWithChildren } from 'react'
 
 const Tooltip = dynamic<PropsWithChildren<TTooltipProps>>(() => import('@/components/kit/Tooltip/Tooltip').then(mod => mod.Tooltip), {
-  ssr: false
+  ssr: false,
 })
 
 const Title = (props: TTitleProps) => {
   const { meta, symbol, type = 'regular', isMultiplyTransaction = false } = props
   const {
     calculatedToTokenAmountUSD,
-    price: { tokenWorth, priceUSD }
+    price: { tokenWorth, priceUSD },
   } = meta
 
   if (type === 'regular') {

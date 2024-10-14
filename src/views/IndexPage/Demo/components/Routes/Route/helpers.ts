@@ -18,7 +18,7 @@ const fruitsPlaceholders = [
   '🫐',
   '🍈',
   '🍓',
-  '🥝'
+  '🥝',
 ]
 
 const getNotAvailablePriceText = (length: number) =>

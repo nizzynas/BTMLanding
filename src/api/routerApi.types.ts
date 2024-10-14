@@ -1,9 +1,9 @@
-import { Key, ReactNode } from 'react'
+import type { Key, ReactNode } from 'react'
 
 enum ToolTypeEnum {
   Swap = 'swap',
   Cross = 'cross',
-  Aggregator = 'aggregator'
+  Aggregator = 'aggregator',
 }
 
 type TTool = {

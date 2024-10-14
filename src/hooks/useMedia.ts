@@ -6,6 +6,6 @@ export function useMedia() {
 
   return {
     isMobile,
-    isLarge
+    isLarge,
   }
 }

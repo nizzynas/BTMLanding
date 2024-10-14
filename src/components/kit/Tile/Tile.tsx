@@ -34,13 +34,13 @@ function Tile({ slots = 1, ySlots = 1, className, icon, mobileIcon, title, descr
     ({
       1: 'lg:col-span-1',
       2: 'lg:col-span-2',
-      3: 'lg:col-span-3'
+      3: 'lg:col-span-3',
     }[slots]),
     ({
       1: 'lg:row-span-1',
-      2: 'lg:row-span-2'
+      2: 'lg:row-span-2',
     }[ySlots]),
-    !disableEffect && styles.tileEffect
+    !disableEffect && styles.tileEffect,
   )
 
   return (
@@ -67,14 +67,14 @@ function Tile({ slots = 1, ySlots = 1, className, icon, mobileIcon, title, descr
             slots === 3 ? 'max-w-[300px]' : 'max-w-[400px]',
             !isMobileColumned ? 'mt-6 lg:mt-0' : 'mr-6 lg:mr-0',
             isIconAndText && slots >= 2 &&
-              (isDesktopReversed ? 'lg:ml-5' : 'mr-5')
+              (isDesktopReversed ? 'lg:ml-5' : 'mr-5'),
           )}>
             {title &&
               <h3 className={cx(
                 'font-semibold',
                 slots >= 2 && '!text-[28px] lg:!text-[32px]',
                 !description ? 'text-[48px]' : 'text-[18px]',
-                description && slots >= 2 ? 'mb-3 lg:mb-2' : 'mb-3'
+                description && slots >= 2 ? 'mb-3 lg:mb-2' : 'mb-3',
               )}>
                 {title}
               </h3>
@@ -82,7 +82,7 @@ function Tile({ slots = 1, ySlots = 1, className, icon, mobileIcon, title, descr
             {description &&
               <p className={cx(
                 'text-white/40',
-                slots >= 2 && 'text-[24px] max-w-[300px]'
+                slots >= 2 && 'text-[24px] max-w-[300px]',
               )}>
                 {description}
               </p>

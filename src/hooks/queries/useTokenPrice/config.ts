@@ -18,7 +18,7 @@ const createQueryConfig = ({ chainId }: TUseTokenPriceQuery) => ({
   refetchOnWindowFocus: false,
   cacheTime: TOKEN_PRICE_INTERVAL,
   staleTime: TOKEN_PRICE_INTERVAL,
-  placeholderData: null
+  placeholderData: null,
 })
 
 const createQueryParams = (params: TUseTokenPriceQuery) => {

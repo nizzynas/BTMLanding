@@ -9,19 +9,19 @@ function useRangedRoutes(routes: TRouteWithMeta[]) {
   const bestItemID = routes.length === 0 ? -1 : 0
   const bestTimeItemID = useMemo(
     () => getRouteByMinProperty(routes, route => calculateRouteTime(route.calculatedSteps)),
-    [routes]
+    [routes],
   )
 
   const routesIDList = useMemo(
     () =>
       [
         bestItemID,
-        ...[bestTimeItemID]
+        ...[bestTimeItemID],
       ]
         .concat(Array.from(routes.keys()))
         .filter(v => v >= 0)
         .filter((v, i, a) => a.indexOf(v) === i),
-    [bestItemID, bestTimeItemID, routes]
+    [bestItemID, bestTimeItemID, routes],
   )
 
   const formatterRouterList = useMemo(() => routesIDList.map(ID => routes[ID]), [routesIDList, routes])
@@ -51,9 +51,9 @@ function useRangedRoutes(routes: TRouteWithMeta[]) {
           price: {
             tokenWorth,
             priceUSD,
-            loss
-          }
-        }
+            loss,
+          },
+        },
       } as TRangingRoute
     })
   }, [formatterRouterList, bestTimeItemID, bestItemID, toTokenPrice])

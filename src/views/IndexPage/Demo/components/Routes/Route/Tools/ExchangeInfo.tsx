@@ -5,18 +5,18 @@ import dynamic from 'next/dynamic'
 import { getTokenDescription } from '../../helpers'
 import type { TExchangeInfoProps, TExchangeInfoStandProps, TToken } from '../../types'
 import { getNotAvailablePriceText } from '../helpers'
-//import { CURRENCY_CRYPTO, formatValue } from '@/format-crypto/format'
+// import { CURRENCY_CRYPTO, formatValue } from '@/format-crypto/format'
 
 import type { TTooltipProps } from '@/components/kit'
 import { Icon, Logo, NetworkLogo } from '@/components/kit'
 
-import { fromDecimal, networks } from '../../utils'
+import { networks } from '../../utils'
 
 const MIN_NO_PRICE = 2
 const MAX_NO_PRICE = 5
 
 const Tooltip = dynamic<PropsWithChildren<TTooltipProps>>(() => import('@/components/kit/Tooltip/Tooltip').then(mod => mod.Tooltip), {
-  ssr: false
+  ssr: false,
 })
 
 const ExchangeInfoStand: FC<PropsWithChildren<TExchangeInfoStandProps>> = memo(
@@ -26,7 +26,7 @@ const ExchangeInfoStand: FC<PropsWithChildren<TExchangeInfoStandProps>> = memo(
     const network = getNetwork(token)
     const notAvailablePrice = !tokenAmount || !Number(tokenAmount)
     const notAvailablePriceText = getNotAvailablePriceText(
-      MIN_NO_PRICE + Math.round(Math.random() * (MAX_NO_PRICE - MIN_NO_PRICE))
+      MIN_NO_PRICE + Math.round(Math.random() * (MAX_NO_PRICE - MIN_NO_PRICE)),
     )
 
     return (
@@ -46,12 +46,12 @@ const ExchangeInfoStand: FC<PropsWithChildren<TExchangeInfoStandProps>> = memo(
             </Tooltip>
               )
             : (
-                ""
+                ''
               )}
         </div>
       </div>
     )
-  }
+  },
 )
 
 const ExchangeInfo: FC<PropsWithChildren<TExchangeInfoProps>> = memo(
@@ -62,7 +62,7 @@ const ExchangeInfo: FC<PropsWithChildren<TExchangeInfoProps>> = memo(
     toTokenAmount,
     type,
     tool,
-    isDisabled = false
+    isDisabled = false,
   }: PropsWithChildren<TExchangeInfoProps>) => {
     return (
       <div className="flex">
@@ -71,7 +71,7 @@ const ExchangeInfo: FC<PropsWithChildren<TExchangeInfoProps>> = memo(
             'inline-flex gap-3.5 rounded-2xl p-1 pr-2 md:p-[1px] md:pr-2.5 md:gap-2',
             isDisabled
               ? 'text-[#1112157a] dark:text-[#ffffff52] bg-[#1112150a] dark:bg-[#ffffff0a]'
-              : 'bg-[#11121514] dark:bg-[#ffffff14]'
+              : 'bg-[#11121514] dark:bg-[#ffffff14]',
           )}
         >
           <div className="hidden md:mr-1 md:flex">
@@ -89,7 +89,7 @@ const ExchangeInfo: FC<PropsWithChildren<TExchangeInfoProps>> = memo(
         </div>
       </div>
     )
-  }
+  },
 )
 
 ExchangeInfoStand.displayName = 'ExchangeInfoStand'

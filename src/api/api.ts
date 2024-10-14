@@ -73,7 +73,7 @@ const api = (instance: AxiosInstance) => {
     patch: <T>(url: string, body: unknown, config: ApiRequestConfig = {}) =>
       withLogger<T>(withAbort<T>(instance.patch)(url, body, config)),
     put: <T>(url: string, body: unknown, config: ApiRequestConfig = {}) =>
-      withLogger<T>(withAbort<T>(instance.put)(url, body, config))
+      withLogger<T>(withAbort<T>(instance.put)(url, body, config)),
   }
 }
 

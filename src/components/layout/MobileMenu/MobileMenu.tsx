@@ -10,7 +10,7 @@ function MobileMenu() {
   return (
     <section className={cx(
       'mobile-menu',
-      isMobileMenuOpen && 'mobile-menu--opened'
+      isMobileMenuOpen && 'mobile-menu--opened',
     )}>
       <div>
         <header className="mobile-menu__header">

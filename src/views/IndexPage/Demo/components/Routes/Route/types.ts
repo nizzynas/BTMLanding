@@ -29,7 +29,7 @@ type TNetValueInfoProps = {
 
 enum InfoPanelTypeEnum {
   receive = 'receive',
-  loss = 'loss'
+  loss = 'loss',
 }
 
 type TInfoPanelProps = {
@@ -66,5 +66,5 @@ export type {
   TSecurityIconType,
   TRiskInfoProps,
   TSuccessRateIconProps,
-  TTransactionsRateProps
+  TTransactionsRateProps,
 }

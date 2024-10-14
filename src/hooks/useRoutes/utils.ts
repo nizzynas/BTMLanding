@@ -40,7 +40,7 @@ const FIXED_PART = 50
 const getTokenPriceInfo = ({
   wei,
   priceUSD,
-  network
+  network,
 }: {
   wei: number | null | string
   priceUSD: string
@@ -53,7 +53,7 @@ const getTokenPriceInfo = ({
   return {
     wei: nWei,
     usd: `${usd} USD`, // Simple formatting for USD
-    token: `${nToken} ${network?.currencySymbol}` // Simple formatting for Token
+    token: `${nToken} ${network?.currencySymbol}`, // Simple formatting for Token
   }
 }
 
@@ -84,7 +84,7 @@ const formatAction =
       const gasActionApprove = getTokenPriceInfo({
         wei: (gasActionApproveUnits || 0) * wei,
         priceUSD,
-        network
+        network,
       })
       const gasAction = getTokenPriceInfo({ wei: (gasActionUnits || 0) * wei, priceUSD, network })
       const providerFee = getTokenPriceInfo({ wei: additionalProviderFee?.amount || 0, priceUSD, network })
@@ -92,7 +92,7 @@ const formatAction =
       const totalGas = getTokenPriceInfo({
         wei: gasAction.wei + gasActionApprove.wei + providerFee.wei,
         priceUSD,
-        network
+        network,
       })
 
       return {
@@ -104,8 +104,8 @@ const formatAction =
           gasAction,
           gasActionApprove,
           totalGas,
-          providerFee
-        }
+          providerFee,
+        },
       }
     }
 
@@ -134,9 +134,9 @@ const formatRoute =
             localGasUSD + Number(meta.totalGas.usd),
             localProviderFeeUSD + Number(meta.providerFee.usd),
             localActionApproveUSD + Number(meta.gasActionApprove.usd),
-            localActionUSD + Number(meta.gasAction.usd)
+            localActionUSD + Number(meta.gasAction.usd),
           ],
-          [0, 0, 0, 0]
+          [0, 0, 0, 0],
         )
         .map(value => `${value} USD`) // Simple USD formatting
 
@@ -159,14 +159,13 @@ const formatRoute =
           gasActionUSD: String(gasActionUSD),
           toolList,
           searchDuration: (Date.now() / 1000 - startTime).toFixed(2),
-          isNeedGas
+          isNeedGas,
         },
-        calculatedSteps
+        calculatedSteps,
       }
     }
 
 // The rest of the code remains unchanged
-
 
 /**
  * It takes an array of routes and returns an object with the gas price and token price for each chain
@@ -176,7 +175,7 @@ const CHAIN_INFO_TEMPLATE: TChainInfo = {
   gasTokenPrice: null,
   gas: '0',
   wei: 0,
-  priceUSD: '0'
+  priceUSD: '0',
 }
 const getChainMap = async (routes: TRoute[]): Promise<TChainMap> => {
   const chainMap: TChainMap = {}
@@ -192,17 +191,17 @@ const getChainMap = async (routes: TRoute[]): Promise<TChainMap> => {
   await Promise.allSettled(
     Array.from(uniqChainIdSet).map(async (chainId) => {
       const gasPriceParams = {
-        chainId
+        chainId,
       }
 
       const tokenPriceParams = {
         ...gasPriceParams,
-        address: getNativeTokenAddress(chainId)
+        address: getNativeTokenAddress(chainId),
       }
 
       const promiseMapResult = await Promise.allSettled([
         Promise.resolve(queryClient.fetchQuery(...createGasPriceQueryParams(gasPriceParams))),
-        Promise.resolve(queryClient.fetchQuery(...createTokenPriceQueryParams(tokenPriceParams)))
+        Promise.resolve(queryClient.fetchQuery(...createTokenPriceQueryParams(tokenPriceParams))),
       ])
 
       const [gasPriseResult, tokenPriceResult] = promiseMapResult
@@ -222,7 +221,7 @@ const getChainMap = async (routes: TRoute[]): Promise<TChainMap> => {
       chainInfoResult.network = getNetworkByChainId(chainId)
 
       chainMap[chainId] = chainInfoResult
-    })
+    }),
   )
 
   return chainMap
@@ -258,9 +257,9 @@ export const getFormattedRoutes = async (routes: TRoute[]) => {
       formatRoute({
         startTime: 0,
         chainMap,
-        toTokenPrice: price
-      })
-    )
+        toTokenPrice: price,
+      }),
+    ),
   )
 }
 
@@ -285,7 +284,7 @@ export { uniqueArrayByKey }
 export const getRouteByMinProperty = <RouteType extends TRoute = TRouteWithMeta>(
   routes: RouteType[],
   func: (route: RouteType) => number,
-  onlyActive = true
+  onlyActive = true,
 ) => {
   const inputRoutes = onlyActive ? routes.filter(route => route.active) : routes
 
@@ -310,7 +309,7 @@ export const getRouteByMinProperty = <RouteType extends TRoute = TRouteWithMeta>
  */
 export const getMinIDByProperty = <RouteType extends TRoute = TRouteWithMeta>(
   objectArray: RouteType[],
-  getObjectProperty: (route: RouteType) => number
+  getObjectProperty: (route: RouteType) => number,
 ) => {
   return objectArray.reduce(
     (stateArr, obj, i, arr) => {
@@ -322,7 +321,7 @@ export const getMinIDByProperty = <RouteType extends TRoute = TRouteWithMeta>(
 
       return getObjectProperty(obj) < getObjectProperty(arr[iMin]) ? [i, 1] : [iMin, countOfMin]
     },
-    [0, 0]
+    [0, 0],
   )
 }
 

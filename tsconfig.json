@@ -1,6 +1,6 @@
 {
   "compilerOptions": {
-    "target": "es5",
+    "target": "ES6",
     "lib": [
       "dom",
       "dom.iterable",
@@ -8,9 +8,8 @@
     ],
     "allowJs": true,
     "skipLibCheck": true,
-    "strict": true,
+    "strict": false,
     "forceConsistentCasingInFileNames": true,
-    "noEmit": true,
     "noImplicitAny": false,
     "esModuleInterop": true,
     "module": "esnext",
@@ -27,7 +26,8 @@
       "public/*": [
         "public/*"
       ]
-    }
+    },
+    "noEmit": true
   },
   "include": [
     "next-env.d.ts",

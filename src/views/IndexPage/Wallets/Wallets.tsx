@@ -8,7 +8,7 @@ import styles from './Wallets.module.scss'
 const middleIndex = Math.ceil(wallets.items.length / 2)
 
 const WalletList = dynamic<TWalletListProps>(() => import('./components/WalletList').then(mod => mod.WalletList), {
-  ssr: false
+  ssr: false,
 })
 
 function Wallets() {
@@ -30,7 +30,7 @@ function Wallets() {
         direction="left"
       ></WalletList>
     </Section>
-  );
+  )
 }
 
 export { Wallets }

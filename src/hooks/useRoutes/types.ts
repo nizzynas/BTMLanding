@@ -20,7 +20,7 @@ type TRouteDuration = {
 enum RouteFetchStatusEnum {
   null = 'null',
   loading = 'loading',
-  finished = 'finished'
+  finished = 'finished',
 }
 
 type TChainInfo = {
@@ -51,6 +51,6 @@ export type {
   TFormatRouteOpts,
   TFormatActionOpts,
   TChainInfo,
-  TChainMap
+  TChainMap,
 }
 export { RouteFetchStatusEnum }

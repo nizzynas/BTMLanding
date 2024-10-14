@@ -27,7 +27,7 @@ const NetValueInfo = (props: TNetValueInfoProps) => {
     calculatedToTokenAmountUSD,
     gasActionApproveUSD,
     gasActionUSD,
-    providerFeeUSD
+    providerFeeUSD,
   } = meta
 
   const receiveInfo = `${tokenWorth} ${symbol}`

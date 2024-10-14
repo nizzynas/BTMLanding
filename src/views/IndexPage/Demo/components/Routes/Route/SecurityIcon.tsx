@@ -8,7 +8,7 @@ const securityIconConfig: {
 } = {
   HIGH_RISK: <Icon icon="highRiskDark" />,
   POTENTIAL_RISK: <Icon icon="potentialRiskDark" />,
-  SAFE_ROUTE: <Icon icon="secureRiskDark" />
+  SAFE_ROUTE: <Icon icon="secureRiskDark" />,
 
 }
 

@@ -36,11 +36,11 @@ const networks: TSimpleNetwork[] = [
   'sifchain',
   'solana',
   'telos',
-  'zkSync'
+  'zkSync',
 ].map((name) => {
   return {
     name,
-    logoURI: `/images/networks/${name}.svg`
+    logoURI: `/images/networks/${name}.svg`,
   }
 })
 

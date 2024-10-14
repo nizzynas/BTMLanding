@@ -49,20 +49,20 @@ function Sdk() {
           </div>
         </div>
       </div>
-      <div className="relative w-full lg:w-1/2 text-[15px]">
+      <div className="relative w-full text-[15px] lg:w-1/2">
         <CodeMirror
           value={VIA_SDK_SNIPPET}
           height="480px"
           extensions={[
             javascript({ jsx: true }),
-            EditorView.lineWrapping
+            EditorView.lineWrapping,
           ]}
           theme={sublime}
           editable={false}
           basicSetup={{
             highlightActiveLine: false,
             highlightActiveLineGutter: false,
-            foldGutter: false
+            foldGutter: false,
           }}
         />
         <CopyToClipboard text={VIA_SDK_SNIPPET}>

@@ -1,12 +1,12 @@
 import type { NextPage } from 'next'
-import { Demo, Intro, Stats, Investors, SafetyFirst, Features, ForDevelopers, TransactionTracking } from '@/views/IndexPage'
+import { Intro, Stats, SafetyFirst, Features, TransactionTracking } from '@/views/IndexPage'
 
 import { Footer, Header, MobileMenu } from '@/components/layout'
 import { Wallets } from '@/views/IndexPage/Wallets'
 import { Supported } from '@/views/IndexPage/Supported'
 import { Ecosystem } from '@/views/IndexPage/Ecosystem'
 import styles from '@/styles/Common.module.scss'
-//import SnapScrollSections from '@/views/IndexPage/Roadmap/Roadmap'
+// import SnapScrollSections from '@/views/IndexPage/Roadmap/Roadmap'
 
 const Home: NextPage = () => {
   return (
@@ -21,11 +21,10 @@ const Home: NextPage = () => {
 
             <Stats />
             <div className="h-[120px] md:h-[200px]" />
-  
-           
+
             <SafetyFirst />
             <div className="h-[120px] md:h-[200px]" />
-           
+
 <br></br>
 <Supported />
             <Features />
@@ -37,8 +36,7 @@ const Home: NextPage = () => {
             <div className={styles.leftDot}>
               <Wallets />
             </div>
-      
-     
+
           </main>
 
           <Footer />

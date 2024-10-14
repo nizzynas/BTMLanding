@@ -18,7 +18,7 @@ const createQueryConfig = ({ chainId }: TUseGasPriceQuery) => ({
   refetchOnWindowFocus: false,
   cacheTime: GAS_PRICE_INTERVAL,
   staleTime: GAS_PRICE_INTERVAL,
-  placeholderData: null
+  placeholderData: null,
 })
 
 const createQueryParams = (params: TUseGasPriceQuery) => {

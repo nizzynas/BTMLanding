@@ -13,7 +13,7 @@ const NetworkLogo: FC<TNetworkLogoProps> = memo(
     networkBackgroundColor: backgroundColor,
     className,
     coinClassName = '',
-    networkClassName = ''
+    networkClassName = '',
   }: TNetworkLogoProps) => {
     return (
       <div className={cx('relative', className)}>
@@ -30,7 +30,7 @@ const NetworkLogo: FC<TNetworkLogoProps> = memo(
         <Logo src={coinLogo} width={24} height={24} imageClassName={coinClassName} />
       </div>
     )
-  }
+  },
 )
 
 NetworkLogo.displayName = 'NetworkLogo'

@@ -108,7 +108,7 @@ const networks: TNetwork[] = [
     txPrefix: 'tx',
     currencySymbol: 'MATIC',
     currencyDecimals: 18,
-    color: '#8247E5'
+    color: '#8247E5',
   },
   {
     name: 'Arbitrum',
@@ -119,7 +119,7 @@ const networks: TNetwork[] = [
     txPrefix: 'tx',
     currencySymbol: 'ETH',
     currencyDecimals: 18,
-    color: '#2d374b'
+    color: '#2d374b',
   },
   {
     name: 'Optimism',
@@ -130,7 +130,7 @@ const networks: TNetwork[] = [
     txPrefix: 'tx',
     currencySymbol: 'ETH',
     currencyDecimals: 18,
-    color: '#FF0420'
+    color: '#FF0420',
   },
   {
     name: 'Ethereum',
@@ -141,7 +141,7 @@ const networks: TNetwork[] = [
     txPrefix: 'tx',
     currencySymbol: 'ETH',
     currencyDecimals: 18,
-    color: '#6179EE'
+    color: '#6179EE',
   },
   {
     name: 'BSC',
@@ -152,7 +152,7 @@ const networks: TNetwork[] = [
     txPrefix: 'tx',
     currencySymbol: 'BNB',
     currencyDecimals: 18,
-    color: '#F3BA2F'
+    color: '#F3BA2F',
   },
   {
     name: 'Avalanche',
@@ -163,7 +163,7 @@ const networks: TNetwork[] = [
     txPrefix: 'tx',
     currencySymbol: 'AVAX',
     currencyDecimals: 18,
-    color: '#E84142'
+    color: '#E84142',
   },
   {
     name: 'Fantom',
@@ -174,7 +174,7 @@ const networks: TNetwork[] = [
     txPrefix: 'tx',
     currencySymbol: 'FTM',
     currencyDecimals: 18,
-    color: '#13B5EC'
+    color: '#13B5EC',
   },
   {
     name: 'Gnosis',
@@ -185,7 +185,7 @@ const networks: TNetwork[] = [
     txPrefix: 'tx',
     currencySymbol: 'xDAI',
     currencyDecimals: 18,
-    color: '#037a5b'
+    color: '#037a5b',
   },
   {
     name: 'Solana',
@@ -196,7 +196,7 @@ const networks: TNetwork[] = [
     txPrefix: 'tx',
     currencySymbol: 'SOL',
     currencyDecimals: 9,
-    color: '#000000'
+    color: '#000000',
   },
   {
     name: 'Moonbeam',
@@ -207,7 +207,7 @@ const networks: TNetwork[] = [
     txPrefix: 'tx',
     currencySymbol: 'GLMR',
     currencyDecimals: 18,
-    color: '#111215'
+    color: '#111215',
   },
   {
     name: 'Aurora',
@@ -218,7 +218,7 @@ const networks: TNetwork[] = [
     txPrefix: 'tx',
     currencySymbol: 'ETH',
     currencyDecimals: 18,
-    color: '#79CF55'
+    color: '#79CF55',
   },
   {
     name: 'Moonriver',
@@ -229,7 +229,7 @@ const networks: TNetwork[] = [
     txPrefix: 'tx',
     currencySymbol: 'MOVR',
     currencyDecimals: 18,
-    color: '#060023'
+    color: '#060023',
   },
   {
     name: 'Harmony',
@@ -240,7 +240,7 @@ const networks: TNetwork[] = [
     txPrefix: 'tx',
     currencySymbol: 'ONE',
     currencyDecimals: 18,
-    color: '#16BEE0'
+    color: '#16BEE0',
   },
   {
     name: 'Boba',
@@ -251,7 +251,7 @@ const networks: TNetwork[] = [
     txPrefix: 'tx',
     currencySymbol: 'ETH',
     currencyDecimals: 18,
-    color: '#79CF55'
+    color: '#79CF55',
   },
   {
     name: 'Cronos',
@@ -262,7 +262,7 @@ const networks: TNetwork[] = [
     txPrefix: 'tx',
     currencySymbol: 'CRO',
     currencyDecimals: 18,
-    color: '#111215'
+    color: '#111215',
   },
   {
     name: 'Osmosis',
@@ -273,7 +273,7 @@ const networks: TNetwork[] = [
     txPrefix: 'transactions',
     currencySymbol: 'OSMO',
     currencyDecimals: 6,
-    color: '#79CF55'
+    color: '#79CF55',
   },
   {
     name: 'Celo',
@@ -284,7 +284,7 @@ const networks: TNetwork[] = [
     txPrefix: 'tx',
     currencySymbol: 'CELO',
     currencyDecimals: 18,
-    color: '#79CF55'
+    color: '#79CF55',
   },
   {
     name: 'Cosmos',
@@ -295,7 +295,7 @@ const networks: TNetwork[] = [
     txPrefix: 'transactions',
     currencySymbol: 'ATOM',
     currencyDecimals: 6,
-    color: '#79CF55'
+    color: '#79CF55',
   },
   {
     name: 'Astar',
@@ -306,7 +306,7 @@ const networks: TNetwork[] = [
     txPrefix: 'tx',
     currencySymbol: 'ASTR',
     currencyDecimals: 18,
-    color: '#13B5EC'
+    color: '#13B5EC',
   },
   {
     name: 'Fuse',
@@ -317,7 +317,7 @@ const networks: TNetwork[] = [
     txPrefix: 'tx',
     currencySymbol: 'FUSE',
     currencyDecimals: 18,
-    color: '#79CF55'
+    color: '#79CF55',
   },
   /* {
     name: 'HECO',
@@ -359,7 +359,7 @@ const networks: TNetwork[] = [
     txPrefix: 'tx',
     currencySymbol: 'BTC',
     currencyDecimals: 8,
-    color: '#F6931A'
+    color: '#F6931A',
   },
   {
     name: 'Litecoin',
@@ -370,7 +370,7 @@ const networks: TNetwork[] = [
     txPrefix: 'transaction',
     currencySymbol: 'LTC',
     currencyDecimals: 8,
-    color: '#68e3f6'
+    color: '#68e3f6',
   },
   {
     name: 'Bitcoin Cash',
@@ -381,7 +381,7 @@ const networks: TNetwork[] = [
     txPrefix: 'tx',
     currencySymbol: 'BCH',
     currencyDecimals: 8,
-    color: '#7ad832'
+    color: '#7ad832',
   },
   {
     name: 'KCC',
@@ -392,7 +392,7 @@ const networks: TNetwork[] = [
     txPrefix: 'tx',
     currencySymbol: 'KCS',
     currencyDecimals: 18,
-    color: '#79CF55'
+    color: '#79CF55',
   },
   {
     name: 'Cube',
@@ -403,8 +403,8 @@ const networks: TNetwork[] = [
     txPrefix: 'tx',
     currencySymbol: 'CUBE',
     currencyDecimals: 18,
-    color: '#418F8F'
-  }
+    color: '#418F8F',
+  },
 ]
 
 export { networks }

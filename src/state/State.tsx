@@ -3,7 +3,7 @@ import React, { useEffect, useState, createContext } from 'react'
 const StateContext = createContext({
   isMobileMenuOpen: false,
   openMobileMenu: () => {},
-  closeMobileMenu: () => {}
+  closeMobileMenu: () => {},
 })
 
 const StateContextProvider = function WalletProvider({ children }: { children: React.ReactNode }) {
@@ -25,7 +25,7 @@ const StateContextProvider = function WalletProvider({ children }: { children: R
       value={{
         isMobileMenuOpen,
         openMobileMenu,
-        closeMobileMenu
+        closeMobileMenu,
       }}
     >
       {children}

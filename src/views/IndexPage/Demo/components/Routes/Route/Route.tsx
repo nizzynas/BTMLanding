@@ -26,7 +26,7 @@ const getFeeHeader = (transactionNo: number) => {
 }
 
 const Tooltip = dynamic<PropsWithChildren<TTooltipProps>>(() => import('@/components/kit/Tooltip/Tooltip').then(mod => mod.Tooltip), {
-  ssr: false
+  ssr: false,
 })
 
 const Route = memo((props: PropsWithChildren<TRouteProps>) => {
@@ -37,7 +37,7 @@ const Route = memo((props: PropsWithChildren<TRouteProps>) => {
     showGas = true,
     sectionStyles,
     isCollapsible = false,
-    type = RouteViewEnum.regular
+    type = RouteViewEnum.regular,
   } = props
 
   const [isExpanded, setExpanded] = useState(expanded)
@@ -59,9 +59,9 @@ const Route = memo((props: PropsWithChildren<TRouteProps>) => {
           e.stopPropagation()
 
           setExpanded(currentStatus => !currentStatus)
-        }
+        },
       }),
-    [getToggleProps, setExpanded]
+    [getToggleProps, setExpanded],
   )
 
   // @ts-expect-error ref undefined
@@ -94,8 +94,8 @@ const Route = memo((props: PropsWithChildren<TRouteProps>) => {
           isRouteActive && !meta.isNeedGas
             ? 'bg-[#1112150a] dark:bg-[#ffffff0a] hover:bg-[#11121514] dark:hover:bg-[#ffffff14] active:bg-[#11121529] dark:active:bg-[#ffffff29]'
             : 'border border-dashed bg-[#ffffff0a] dark:bg-[#1112150a] border-[#11121552] dark:border-[#ffffff52]',
-          isRouteActive ? 'cursor-pointer' : 'cursor-not-allowed'
-        ]
+          isRouteActive ? 'cursor-pointer' : 'cursor-not-allowed',
+        ],
       )}
     >
       <header className="relative flex">
@@ -254,7 +254,7 @@ const Route = memo((props: PropsWithChildren<TRouteProps>) => {
                           <div
                             className={cx(
                               'flex gap-0.5 text-xs',
-                              isNeedGas ? 'text-[#FF2E2ECC]' : 'text-coal-500 dark:text-[#ffffff66]'
+                              isNeedGas ? 'text-[#FF2E2ECC]' : 'text-coal-500 dark:text-[#ffffff66]',
                             )}
                           >
                             <div className="flex">

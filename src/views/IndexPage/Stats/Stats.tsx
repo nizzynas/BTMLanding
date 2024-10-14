@@ -5,16 +5,16 @@ function Stats() {
   const items = [
     {
       title: <>$2.8m</>,
-      text: <>Liquidity<br className="md:hidden" /></>
+      text: <>Liquidity<br className="md:hidden" /></>,
     },
     {
       title: <>399k</>,
-      text: <>All&nbsp;time<br className="md:hidden" /> transactions</>
+      text: <>All&nbsp;time<br className="md:hidden" /> transactions</>,
     },
     {
       title: <>74,7k</>,
-      text: <>All&nbsp;time<br className="md:hidden" /> users</>
-    }
+      text: <>All&nbsp;time<br className="md:hidden" /> users</>,
+    },
   ]
   return (
     <Section>

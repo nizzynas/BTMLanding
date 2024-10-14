@@ -5,9 +5,7 @@ import styles from './Header.module.scss'
 import { socials } from '@/data/socials'
 import { StateContext } from '@/state'
 
-import MoreIcon from 'public/images/socials/more.svg'
 import LessIcon from 'public/images/socials/less.svg'
-
 import MenuIcon from 'public/images/icons/menu-icon.svg'
 import { isNewYear } from './utils'
 
@@ -36,7 +34,12 @@ function Header() {
 
   const socialItem = social => (
     <li key={social.name}>
-      <a href={social.link} className={styles.headerSocialItem} target="_blank" rel="noopener noreferrer">
+      <a
+        href={social.link}
+        className={styles.headerSocialItem}
+        target="_blank"
+        rel="noopener noreferrer"
+      >
         {social.icon}
         <span className="visually-hidden">{social.name}</span>
       </a>
@@ -48,36 +51,74 @@ function Header() {
   }
 
   return (
-    <header className={cx(styles.header, isHeaderCompact && styles.headerCompact)}>
-      <div className={cx(styles.headerLogoContainer, isHeaderCompact && styles.headerLogoContainerFaded)}>
-        {/*<img src={isNewYearLogo ? '/images/logo-ny.svg' : '/images/logo.svg'} alt="Via" className={styles.headerLogoImage} />*/}
+    <header
+      className={cx(styles.header, isHeaderCompact && styles.headerCompact)}
+    >
+      <div
+        className={cx(
+          styles.headerLogoContainer,
+          isHeaderCompact && styles.headerLogoContainerFaded,
+        )}
+      >
+        <img
+          src={isNewYearLogo ? '/images/logo-ny.svg' : '/images/logo.svg'}
+          alt="BTM Tech Logo"
+          className={styles.headerLogoImage}
+        />
         <div className={styles.headerLogoDescription}>
           <strong>BTM Tech</strong>
-         
         </div>
       </div>
 
       <div className={styles.headerDesktopRight}>
         <div className={styles.headerSocialsWrapper}>
-          <ul className={cx(styles.headerSocials, styles.headerSocialsPreview, isSocialsExpanded && styles.headerSocialsHidden)}>
+          <ul
+            className={cx(
+              styles.headerSocials,
+              styles.headerSocialsPreview,
+              isSocialsExpanded && styles.headerSocialsHidden,
+            )}
+          >
             {socials.slice(0, 3).map(socialItem)}
-            
           </ul>
 
-          <ul className={cx(styles.headerSocials, !isSocialsExpanded && styles.headerSocialsHidden)}>
+          <ul
+            className={cx(
+              styles.headerSocials,
+              !isSocialsExpanded && styles.headerSocialsHidden,
+            )}
+          >
             {socials.map(socialItem)}
-            <button className={styles.headerSocialToggler} onClick={toggleSocials}><LessIcon /></button>
+            <button
+              className={styles.headerSocialToggler}
+              onClick={toggleSocials}
+            >
+              <LessIcon />
+            </button>
           </ul>
         </div>
 
         <nav className={styles.headerButtons}>
-          <a href="https://router.via.exchange" className={cx(styles.headerButton, styles.headerLaunchButton, isHeaderCompact && styles.headerLaunchButtonCompact)} target="_blank" rel="noreferrer">
+          <a
+            href="https://router.via.exchange"
+            className={cx(
+              styles.headerButton,
+              styles.headerLaunchButton,
+              isHeaderCompact && styles.headerLaunchButtonCompact,
+            )}
+            target="_blank"
+            rel="noreferrer"
+          >
             Launch
           </a>
         </nav>
       </div>
 
-      <button type="button" className={styles.headerBurgerButton} onClick={openMobileMenu}>
+      <button
+        type="button"
+        className={styles.headerBurgerButton}
+        onClick={openMobileMenu}
+      >
         <MenuIcon alt="Menu" />
       </button>
     </header>

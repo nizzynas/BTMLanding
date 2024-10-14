@@ -17,7 +17,7 @@ const TooltipWrapper = function Animation({ children, isAnimated, isVisible }: P
         timeout={300}
         classNames={{
           appearActive: 'opacity-100',
-          enterDone: 'opacity-100'
+          enterDone: 'opacity-100',
         }}
       >
         {children}
@@ -42,7 +42,7 @@ const Tooltip =
     isAnimated = true,
     isDelayed = true,
     placement = 'top-start',
-    theme = 'regular'
+    theme = 'regular',
   }: PropsWithChildren<TTooltipProps>) => {
     const { visible, setTriggerRef, setTooltipRef, getTooltipProps } = usePopperTooltip({
       trigger: 'hover',
@@ -50,7 +50,7 @@ const Tooltip =
       interactive,
       delayShow: isDelayed ? TOOLTIP_DELAY : 0,
       placement,
-      offset: [0, 0]
+      offset: [0, 0],
     })
 
     const rootElement = document.body
@@ -67,8 +67,8 @@ const Tooltip =
                   'text-inherit shadow-none !py-1 !bg-transparent !border-none',
                   isAnimated
                     ? [visible ? 'opacity-100 pointer-events-auto' : 'opacity-0 pointer-events-none']
-                    : [visible ? '!flex' : '!hidden']
-                )
+                    : [visible ? '!flex' : '!hidden'],
+                ),
               })}
             >
               <div
@@ -77,14 +77,14 @@ const Tooltip =
                   width === 'big' && 'max-w-[xs]',
                   theme === 'regular' &&
                     'bg-white text-coal border-coal-80 dark:bg-coal dark:border-white-80 dark:text-white-800 text-xs shadow-lg',
-                  theme === 'transparent' && 'bg-transparent border-none'
+                  theme === 'transparent' && 'bg-transparent border-none',
                 )}
               >
                 {content}
               </div>
             </div>
           </TooltipWrapper>,
-          rootElement
+          rootElement,
         )}
       </>
     )

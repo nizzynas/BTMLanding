@@ -144,7 +144,7 @@ export enum RoutePriorityEnum {
   Smart = 'Smart',
   Fastest = 'Fastest',
   Safest = 'Safest',
-  MaxReturn = 'MaxReturn'
+  MaxReturn = 'MaxReturn',
 }
 
 type TRoutesProps = {
@@ -153,7 +153,7 @@ type TRoutesProps = {
 
 enum RouteViewEnum {
   regular = 'regular',
-  smart = 'smart'
+  smart = 'smart',
 }
 
 type TRouteProps = {
@@ -189,7 +189,7 @@ type TRouteSkeletonProps = {
 enum CollapseEnum {
   default = 'default',
   collapse = 'collapse',
-  expand = 'expand'
+  expand = 'expand',
 }
 
 export { CollapseEnum, RouteViewEnum }

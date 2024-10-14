@@ -18,7 +18,7 @@ export function useRoutes() {
       toChainId: 42161,
       fromTokenAddress: '0x0000000000000000000000000000000000000000',
       toTokenAddress: '0x0000000000000000000000000000000000000000',
-      multiTx: true
+      multiTx: true,
     })
 
     const wsCurrent = ws.current

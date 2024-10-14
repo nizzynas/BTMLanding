@@ -19,11 +19,11 @@ function EcoBlock({ network }: { network: TBlock }) {
   }, [])
   return network ? (
     <Image title={network.name} src={network.logoURI} alt={network.name} width={80} height={80} className="animate-opacityInfinity rounded-[24px] opacity-0 lg:h-[120px] lg:w-[120px]" style={{
-      '--loading-time': `${DELAY}s`
+      '--loading-time': `${DELAY}s`,
     } as CSSProperties} />
   ) : (
       <div className={cx('h-[80px] w-[80px] animate-opacityInfinity rounded-[24px] opacity-0 lg:h-[120px] lg:w-[120px]', specifyEmptyBlockColor)} style={{
-        '--loading-time': `${DELAY}s`
+        '--loading-time': `${DELAY}s`,
       } as CSSProperties} />
   )
 }

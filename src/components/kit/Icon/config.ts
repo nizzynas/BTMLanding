@@ -24,10 +24,10 @@ import Guild from 'public/images/socials/guild.svg'
 
 const icon = (
   Component: FunctionComponent<PropsWithChildren<SVGProps<SVGSVGElement>>> & { title?: string | undefined },
-  baseline = 0
+  baseline = 0,
 ) => ({
   Component,
-  baseline
+  baseline,
 })
 
 const ICONS = {
@@ -51,7 +51,7 @@ const ICONS = {
   discord: icon(Discord),
   twitter: icon(Twitter),
   medium: icon(Medium),
-  guild: icon(Guild)
+  guild: icon(Guild),
 }
 
 export { ICONS }

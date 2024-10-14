@@ -1,7 +1,7 @@
 function Skeleton({
   w = 80,
   h = 40,
-  className = ''
+  className = '',
 }: {
   w?: number | string
   h?: number | string
@@ -13,7 +13,7 @@ function Skeleton({
       style={{
         width: w,
         minWidth: w,
-        height: h
+        height: h,
       }}
     />
   )

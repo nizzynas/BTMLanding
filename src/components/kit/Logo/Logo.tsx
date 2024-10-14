@@ -17,7 +17,7 @@ const Logo: FC<TLogoProps> = memo(
         <Image src={src} alt={alt} style={style} className={cx('h-full w-full', imageClassName)} />
       </div>
     )
-  }
+  },
 )
 
 Logo.displayName = 'Logo'

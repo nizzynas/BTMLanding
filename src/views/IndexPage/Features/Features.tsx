@@ -4,14 +4,12 @@ import { Tile } from '@/components/kit'
 
 import SmartSortingIcon from 'public/images/features/smart-sorting.svg'
 import MultiAccountingIcon from 'public/images/features/multi-accounting.svg'
-import FilterToolsIcon from 'public/images/features/filter-tools.svg'
 import SlippageIcon from 'public/images/features/slippage.svg'
 import DurationIcon from 'public/images/features/duration.svg'
 import GasEstimationIcon from 'public/images/features/gas-estimation.svg'
 import RecipientAddressIcon from 'public/images/features/recipient-address.svg'
 import RouteRescuerIcon from 'public/images/features/route-rescuer.svg'
 import MultilingualIcon from 'public/images/features/multilingual.svg'
-import RoutePreviewIcon from 'public/images/features/route-preview.svg'
 
 function Features() {
   return (
@@ -60,7 +58,7 @@ function Features() {
             description="Automatically adjust transaction routes if insufficient gas is detected, ensuring smooth operation across BTM transactions."
           />
 
-{/* 
+{/*
           <Tile
             icon={<MultilingualIcon/>}
             title="Multilingual translation"
