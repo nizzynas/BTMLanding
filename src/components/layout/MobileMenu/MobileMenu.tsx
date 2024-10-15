@@ -96,7 +96,7 @@ function MobileMenu() {
         Launch dApp
       </a>
     </section>
-  );
+  )
 }
 
 export { MobileMenu }

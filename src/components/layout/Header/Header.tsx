@@ -7,7 +7,6 @@ import { StateContext } from '@/state'
 
 import LessIcon from 'public/images/socials/less.svg'
 import MenuIcon from 'public/images/icons/menu-icon.svg'
-import { isNewYear } from './utils'
 
 function Header() {
   const { openMobileMenu } = useContext(StateContext)
@@ -26,8 +25,6 @@ function Header() {
       window.removeEventListener('scroll', handleScroll)
     }
   }, [])
-
-
 
   const socialItem = social => (
     <li key={social.name}>
@@ -54,7 +51,7 @@ function Header() {
       <div
         className={cx(
           styles.headerLogoContainer,
-          isHeaderCompact && styles.headerLogoContainerFaded,
+          isHeaderCompact && styles.headerLogoContainerFaded
         )}
       >
         <img
@@ -70,7 +67,7 @@ function Header() {
             className={cx(
               styles.headerSocials,
               styles.headerSocialsPreview,
-              isSocialsExpanded && styles.headerSocialsHidden,
+              isSocialsExpanded && styles.headerSocialsHidden
             )}
           >
             {socials.slice(0, 3).map(socialItem)}
@@ -79,7 +76,7 @@ function Header() {
           <ul
             className={cx(
               styles.headerSocials,
-              !isSocialsExpanded && styles.headerSocialsHidden,
+              !isSocialsExpanded && styles.headerSocialsHidden
             )}
           >
             {socials.map(socialItem)}
@@ -98,7 +95,7 @@ function Header() {
             className={cx(
               styles.headerButton,
               styles.headerLaunchButton,
-              isHeaderCompact && styles.headerLaunchButtonCompact,
+              isHeaderCompact && styles.headerLaunchButtonCompact
             )}
             target="_blank"
             rel="noreferrer"
