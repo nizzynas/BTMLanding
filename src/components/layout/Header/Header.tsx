@@ -14,7 +14,6 @@ function Header() {
 
   const [isHeaderCompact, setHeaderCompact] = useState(false)
   const [isSocialsExpanded, setSocialsExpanded] = useState(false)
-  const [isNewYearLogo, setIsNewYearLogo] = useState(false)
 
   const handleScroll = () => {
     setHeaderCompact(window.pageYOffset > 5)
@@ -28,9 +27,7 @@ function Header() {
     }
   }, [])
 
-  useEffect(() => {
-    setIsNewYearLogo(isNewYear())
-  }, [])
+
 
   const socialItem = social => (
     <li key={social.name}>
@@ -65,9 +62,6 @@ function Header() {
           alt="BTM Tech Logo"
           className={styles.headerLogoImage}
         />
-        {/*<div className={styles.headerLogoDescription}>
-          <strong>BTM Tech</strong>
-        </div>*/}
       </div>
 
       <div className={styles.headerDesktopRight}>
