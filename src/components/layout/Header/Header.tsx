@@ -61,13 +61,13 @@ function Header() {
         )}
       >
         <img
-          src={isNewYearLogo ? '/images/logo-ny.svg' : '/images/logo.svg'}
+          src={'/images/BTMLogo.png'}
           alt="BTM Tech Logo"
           className={styles.headerLogoImage}
         />
-        <div className={styles.headerLogoDescription}>
+        {/*<div className={styles.headerLogoDescription}>
           <strong>BTM Tech</strong>
-        </div>
+        </div>*/}
       </div>
 
       <div className={styles.headerDesktopRight}>
@@ -100,7 +100,7 @@ function Header() {
 
         <nav className={styles.headerButtons}>
           <a
-            href="https://router.via.exchange"
+            href=""
             className={cx(
               styles.headerButton,
               styles.headerLaunchButton,

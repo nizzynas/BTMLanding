@@ -63,12 +63,12 @@ h1 {
   letter-spacing: 0.01em;
 
   &:hover {
-    background-color: #d3dbcd;
+    background-color: #417f43;
     color: #fff;
   }
 
   &:active {
-    background-color: #d3dbcd;
+    background-color: #417f43;
     color: #f1cfd5;
   }
 }
@@ -94,7 +94,7 @@ h1 {
   }
 
   &:hover {
-    box-shadow: 0px 0px 40px #d3dbcd;
+    box-shadow: 0px 0px 40px #549856;
   }
 }
 
@@ -547,14 +547,14 @@ section.tools {
     box-shadow: 0px 0px 40px transparent;
 
     &:hover {
-      box-shadow: 0px 0px 40px #d3dbcd;
-      background-color: #d3dbcd;
-      color: #fff;
+      box-shadow: 0px 0px 40px #549856;
+      background-color: #417f43;
+      color: #417f43;
     }
 
     &:active {
-      background-color: #d3dbcd;
-      color: #f1cfd5;
+      background-color: #549856;
+      color: #417f43;
     }
   }
 }

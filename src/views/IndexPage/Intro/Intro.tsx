@@ -6,7 +6,7 @@ function Intro() {
   return (
     <Section className="intro">
       <div className="form-wrapper">
-        <a className="form-link" href="https://router.via.exchange" target="_blank" rel="noreferrer">
+        <a className="form-link" href="" target="_blank" rel="noreferrer">
           <img src="/images/backgrounds/bg-form.svg" />
         </a>
       </div>
@@ -14,7 +14,7 @@ function Intro() {
       Decentralized Liquidity<br />
       for Global ATMs
       </h1>
-      <a data-button="large" href="https://router.via.exchange/" target="_blank" rel="noreferrer">Launch dApp</a>
+      <a data-button="large" href="" target="_blank" rel="noreferrer">Launch dApp</a>
     </Section>
   )
 }

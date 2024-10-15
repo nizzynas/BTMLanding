@@ -27,7 +27,7 @@ function TransactionTracking() {
             slots={2}
             icon={<PushNotificationsIcon/>}
             title="Real-Time Transaction Alerts"
-            description="Get instant notifications on your device to stay updated on transaction statuses and confirmations through BTMs."
+            description="Get instant notifications on your device to stay updated on transaction statuses and confirmations."
           />
           <Tile
             icon={<DynamicTitleIcon/>}

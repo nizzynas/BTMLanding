@@ -38,7 +38,7 @@ function Sdk() {
             <ViaIcon />
           </div>
           <div className="mt-8">
-            <ActionLink text="Learn more" href="https://github.com/viaprotocol/via-sdk-js#readme" />
+            <ActionLink text="Learn more" href="" />
           </div>
         </div>
         <div className="mt-11">

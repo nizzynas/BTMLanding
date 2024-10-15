@@ -97,7 +97,7 @@ function Supported() {
         <div className={styles.description}>
           <h3 className={styles.lot}>Our Vision</h3>
           <p>
-            Transforming the BTM landscape with innovative technology and
+            Transforming the Web3 landscape with innovative technology and
             strategic growth.
           </p>
         </div>
