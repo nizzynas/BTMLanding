@@ -8,8 +8,8 @@ const phaseDetails = {
   Ph1: {
     title: 'Phase 1: Development and Setup',
     details: `
-      • Web3 Access Point; Dashboard for owners & users, deployed on Sol blockchain.
-      • Web2 Access Point; Web-app interaction, wallet connect, no trackers.
+      • Dashboard for ATM owners.
+      • Web-app, wallet connect, no trackers.
       • Ecosystem; Liquidity cold-wallet, converting tokens and fees.
       • White-paper outlines objective vision.
       • Goal: MVP deployment functionality for clients and users.

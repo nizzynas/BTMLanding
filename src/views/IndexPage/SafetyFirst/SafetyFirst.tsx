@@ -14,17 +14,17 @@ function SafetyFirst() {
       <>
         <h2 className="mb-6 ml-2 text-[36px] font-semibold leading-[44px] lg:hidden">Secure Crypto Transactions</h2>
         <Tile.Group>
-          <Tile title="Secure Crypto Transactions" className="hidden lg:flex" />
+          <Tile title="ATM Liquidity Aggregator" className="hidden lg:flex" />
           <Tile
             icon={<WatchdogIcon/>}
             title="Bridges' watchdog"
-            description="We analyze bridges' transactions and automatically disable those hacked or lacking liquidity"
+            description="We facilitate cross-chain transactions to secure optimal rates and ensure seamless execution, while safeguarding against liquidity issues."
             isMobileColumned
           />
           <Tile
             icon={<SecurityScoreIcon/>}
-            title="Security score"
-            description="Conduct a research about the bridge according the decentralization, the actuality of audits and existence of centralized relayers"
+            title="Security"
+            description="We handle the swaps, ensuring secure purchases without the hassle of transferring crypto across different platforms."
             isMobileColumned
           />
           <Tile

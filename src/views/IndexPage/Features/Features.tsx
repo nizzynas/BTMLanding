@@ -29,7 +29,7 @@ function Features() {
           <Tile
             icon={<MultilingualIcon/>}
             title="Multilingual translation"
-            description="Provide a seamless experience by offering multi-language support for users worldwide."
+            description="Immersive experience by offering multi-language support for users worldwide."
           />
           <Tile
             slots={2}

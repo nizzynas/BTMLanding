@@ -7,7 +7,7 @@ function Footer() {
         <div className="flex flex-col items-center gap-2.5 lg:flex-row lg:gap-8">
 
           <div>
-            BTM Tech, 2024
+           &copy; BTM Tech, 2024
           </div>
         </div>
         <ul className="mb-[80px] flex gap-4 lg:mb-0 lg:gap-8">
